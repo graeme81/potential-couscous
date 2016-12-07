@@ -16,8 +16,8 @@ class Album
   def artist()
 
     sql = "SELECT * FROM albums WHERE id =#{@artist_id};"
-    customer = SqlRunner.run( sql )[0]
-    return Artist.new( customer )
+    artist = SqlRunner.run( sql )[0]
+    return Artist.new( artist )
 
   end
 
